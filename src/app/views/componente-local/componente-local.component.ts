@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
 
 
 @Component({
+  standalone:true,
   selector: 'app-componente-local',
   templateUrl: './componente-local.component.html',
   styleUrl: './componente-local.component.css'

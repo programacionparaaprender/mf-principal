@@ -4,7 +4,8 @@ module.exports = withModuleFederationPlugin({
 
   remotes: {
     "mfe1": "http://localhost:3000/remoteEntry.js",   
-    "mf-remoto": "http://localhost:4201/remoteEntry.js",   
+    //"mf-remoto": "http://localhost:4201/remoteEntry.js",   
+    "mf-remoto":"http://mf-remoto.s3-website.us-east-2.amazonaws.com/remoteEntry.js"
   },
 
   shared: {

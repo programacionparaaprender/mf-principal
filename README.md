@@ -15,6 +15,29 @@
 >- ng g c components/login -m login.module
 >- --port 4200 --type host
 
+### comandos aws s3
+>- Cuenta IAM agregarle
+>- agregar politica directamente AmazonS3ReadOnlyAccess IAM 
+>- agregar politica directamente AmazonS3FullAccess IAM 
+>- aws s3 ls --profile myprofile 
+>- aws sts get-caller-identity 
+>- aws s3 sync dist/ s3://mf-remoto --acl public-read 
+>- aws s3 sync dist/mf-remoto s3://mf-remoto 
+>- aws s3 ls s3://mf-remoto 
+>- aws s3 ls s3://tu-bucket --recursive | grep index.html 
+>- aws s3 cp dist/mf-remoto/index.html s3://mf-remoto/index.html 
+>- aws s3 sync dist/mf-remoto/ s3://mf-remoto
+Configurar cors en permisos 
+[ 
+  { 
+    "AllowedHeaders": ["*"], 
+    "AllowedMethods": ["GET"], 
+    "AllowedOrigins": ["*"], 
+    "ExposeHeaders": [] 
+  } 
+] 
+>- npm run build
+>- aws s3 sync dist/mf-principal/ s3://mf-principal 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.4.
 
