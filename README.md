@@ -15,7 +15,7 @@
 >- ng g c components/login -m login.module
 >- --port 4200 --type host
 
-### comandos aws s3
+### comandos aws s3 despliegue en bucket independiente
 >- Cuenta IAM agregarle
 >- agregar politica directamente AmazonS3ReadOnlyAccess IAM 
 >- agregar politica directamente AmazonS3FullAccess IAM 
@@ -38,6 +38,10 @@ Configurar cors en permisos
 ] 
 >- npm run build
 >- aws s3 sync dist/mf-principal/ s3://mf-principal 
+
+### comandos aws s3 despliegue en bucket compartido
+>- aws s3 sync dist/mf-principal s3://mf-host-and-remote/
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.4.
 

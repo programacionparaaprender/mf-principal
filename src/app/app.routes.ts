@@ -14,7 +14,8 @@ export const routes: Routes = [
         loadRemoteModule({
           type: 'module',
           //remoteEntry: 'http://localhost:4201/remoteEntry.js',
-          remoteEntry: 'http://mf-remoto.s3-website.us-east-2.amazonaws.com/remoteEntry.js',
+          //remoteEntry: 'http://mf-remoto.s3-website.us-east-2.amazonaws.com/remoteEntry.js',
+          remoteEntry: 'http://mf-host-and-remote.s3-website.us-east-2.amazonaws.com/mf-remoto/remoteEntry.js',
           exposedModule: './RemotoComponent',
         }).then((m) => m.RemotoComponent),
     }
